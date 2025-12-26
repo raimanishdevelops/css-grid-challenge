@@ -1,0 +1,38 @@
+.animay {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    height: 170px;
+    width: 140px;
+
+    background-image: linear-gradient(to left, black, white);
+    animation: 3s fadeOut ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* @keyframes updown{
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(360deg);
+  }
+  100% {
+    opacity: 0;
+} 
+    }*/
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.hidden {
+    animation: fadeOut 1s forwards;
+}
